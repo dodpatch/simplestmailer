@@ -21,64 +21,8 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{route('home')}}" class="nav-link">{{__('Home')}}</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="{{route('contact.index')}}" class="nav-link">{{__('Contact')}}</a>
-      </li>
-    </ul>
-
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3" method="POST", action="{{route('mail.search')}}" id="form-search">
-      @csrf
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" name="search" id="search" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search" id="fa-seach"></i>
-          </button>
-        </div>
-      </div>
-      <input type="hidden" value="" name="type" id="input-type">
-    </form>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-user"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">{{Auth::user()->name}}</span>
-          <div class="dropdown-divider"></div>
+  @yield('topbar')
   
-
-          <a class="dropdown-item" href="{{ route('logout') }}"
-              onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();">
-              <i class="fas fa-sign-out-alt"></i> {{__('Logout')}}
-          </a>
-
-            
-          <div class="dropdown-divider"></div>
-          <a href="{{route('profile')}}" class="dropdown-item">
-            <i class="fas fa-user-cog mr-2"></i>{{__('Profile')}}
-          </a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
-
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
