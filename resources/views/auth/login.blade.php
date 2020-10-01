@@ -65,6 +65,7 @@
           </div>
           <!-- /.col -->
         </div>
+
       </form>
       <!-- /.social-auth-links -->
 

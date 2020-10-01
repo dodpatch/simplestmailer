@@ -14,8 +14,7 @@
     </ul>
 
     <!-- SEARCH FORM -->
-    @yield('searchbar')
-    
+    {{$slot}}
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->

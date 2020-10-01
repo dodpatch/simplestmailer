@@ -1,9 +1,4 @@
 @extends('layouts.main')
-<meta name="csrf-token" content="{{csrf_token()}}">
-@section('topbar')
-<x-topbars.topbarlte>
-</x-topbarlte>
-@endsection
 @section('notification')
 <style>
     .overlay{

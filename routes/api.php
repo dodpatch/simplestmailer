@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/api/user/{user}', 'api\AuthController@user'
 Route::prefix('/user')->group(function(){
     Route::post('/', 'api\AuthController@signup');
     Route::post('/login', 'api\AuthController@login');
-    Route::get('/', 'api\AuthController@details')->middleware('auth:api');;
+    Route::get('/', 'api\AuthController@details')->middleware('auth:api');
     Route::get('/logout', 'api\AuthController@logout')->middleware('auth:api');
     Route::middleware('auth:api')->get('/sent', 'api\AuthController@sentEmail');
 
