@@ -13,8 +13,10 @@
       </li>
     </ul>
 
-    <!-- SEARCH FORM -->
-    {{$slot}}
+    <!-- content will be put here -->
+        {{$slot}}
+    <!-- /content will be put here -->
+    
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->

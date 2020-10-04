@@ -14,18 +14,20 @@ class input extends Component
     public $required;
     public $autofocus;
     public $value;
+    public $placeholder;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($name, $type, $icon, $label, $value = '', $required = false, $autofocus = false)
+    public function __construct($name, $type, $icon, $label, $value = '', $required = false, $autofocus = false, $placeholder = '')
     {
         $this->name = $name;
         $this->type = $type;
         $this->icon = $icon;
         $this->label = $label;
         $this->value = $value;
+        $this->placeholder = $placeholder;
         $this->required = $required;
         $this->autofocus = $autofocus;
     }

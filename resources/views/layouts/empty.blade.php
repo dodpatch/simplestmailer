@@ -14,7 +14,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="logo">
-        <a href="{{route($logo-route)}}"><b>Admin</b>LTE</a>
+        <a href=""><b>Admin</b>LTE</a>
     </div>
     @yield('content')
 </div>

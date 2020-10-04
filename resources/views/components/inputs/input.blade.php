@@ -1,6 +1,5 @@
 <div class="input-group mb-3">
     <input 
-
         id="{{$name}}"
         type="{{$type}}"
         name="{{$name}}"
@@ -8,12 +7,12 @@
         placeholder="{{$placeholder}}"
         value="{{ old($name, $value !== '' ? $value : '') }}" 
         {{ $required ? 'required' : '' }} 
-      {{ $autofocus ? 'autofocus' : '' }}>
-     >
+      {{ $autofocus ? 'autofocus' : '' }}
+    >
     <div class="input-group-append">
-    <div class="input-group-text">
-        <span class="fas fa-{{$icon}}"></span>
-    </div>
+        <div class="input-group-text">
+            <span class="fas fa-{{$icon}}"></span>
+        </div>
     </div>
 </div>
 
