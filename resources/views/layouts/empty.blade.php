@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Log in</title>
+  <title>Connexion</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet"> 
@@ -12,11 +12,20 @@
   <link href="{{ asset('dist/css/adminlte.min.css') }}" rel="stylesheet">
 </head>
 <body class="hold-transition login-page">
+<style>
+      .btn_login{
+          height:40px;
+          width:auto;
+      }
+  </style>
+<body class="hold-transition login-page">
 <div class="login-box">
-    <div class="logo">
-        <a href=""><b>Admin</b>LTE</a>
-    </div>
-    @yield('content')
+  <div class="login-logo">
+    <a href="../../index2.html"><b>SimplestMailer</b></a>
+  </div>
+ 
+</div>
+@yield('content')
 </div>
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('js/typehead-4.0.2.min.js')}}"></script>
