@@ -1,20 +1,19 @@
 <?php
 
-namespace App\View\Components\cards;
+namespace App\View\Components\sidebars;
 
 use Illuminate\View\Component;
 
-class cardadminlte extends Component
+class sidebar extends Component
 {
-    public $title;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title)
+    public function __construct()
     {
-        $this->title = $title;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class cardadminlte extends Component
      */
     public function render()
     {
-        return view('components.cards.cardadminlte');
+        return view('components.sidebars.sidebar');
     }
 }
